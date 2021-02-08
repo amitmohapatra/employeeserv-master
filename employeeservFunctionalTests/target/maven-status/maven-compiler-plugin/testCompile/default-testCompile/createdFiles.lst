@@ -1,0 +1,8 @@
+com/paypal/bfs/test/employeeserv/functionaltests/resource/EmployeeResourceGet404Test.class
+com/paypal/bfs/test/employeeserv/functionaltests/resource/EmployeeResourceCreate409Test.class
+com/paypal/bfs/test/employeeserv/functionaltests/service/EmployeeServiceTest.class
+com/paypal/bfs/test/employeeserv/functionaltests/resource/EmployeeResourceCreate400Test.class
+com/paypal/bfs/test/employeeserv/functionaltests/resource/EmployeeResourceGet200Test.class
+com/paypal/bfs/test/employeeserv/functionaltests/repository/EmployeeRepositoryTest.class
+com/paypal/bfs/test/employeeserv/functionaltests/resource/EmployeeResourceCreate201Test.class
+com/paypal/bfs/test/employeeserv/functionaltests/AbstractTest.class
