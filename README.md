@@ -13,12 +13,6 @@ There are three modules in this application
 	- `EmployeeResourceImpl.java` implements the `EmployeeResource` interface.
 - employeeservFunctionalTests - This module would have the functional tests.
 
-## How to run the application
-- Please have Maven version `3.3.3` & Java 8 on your system.
-- Use command `mvn clean install` to build the project.
-- Use command `mvn spring-boot:run` from `employeeservImplementation` folder to run the project.
-- Use postman or curl to access `http://localhost:8080/v1/bfs/employees/1` GET endpoint. It will return an Employee resource.
-
 ## Assignment
 We would like you to enhance the existing project and see you complete the following requirements:
 
@@ -93,6 +87,25 @@ We would like you to enhance the existing project and see you complete the follo
 	- Done
 - Idempotency logic is implemented to avoid duplicate resource creation.
     - DB unique constraint added in Entity
+
+## How to run the application
+- Please have Maven version `3.3.3` & Java 8 on your system.
+- Use command `mvn clean install` to build the project.
+- Use command `mvn spring-boot:run` from `employeeservImplementation` folder to run the project.
+- Use postman or curl to access `http://localhost:8080/v1/bfs/employee` POST endpoint with body mentioned below. It will return an Employee resource on successful saving.
+  - {
+	"first_name": "Amit",
+	"last_name": "Mohapatra",
+	"date_of_birth": "10/2/1990",
+	"address": {
+	    "line1": "test address",
+	    "city": "Bangalore",
+	    "state": "Karnataka",
+	    "country": "India",
+	    "zip_code": "560035"
+	    }
+	}
+- Use postman or curl to access `http://localhost:8080/v1/bfs/employee/1` GET endpoint. It will return an Employee resource.
 
 ## Assignment submission
 Thank you very much for your time to take this test. Please upload this complete solution in Github and send us the link to `bfs-sor-interview@paypal.com`.
