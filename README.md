@@ -37,7 +37,7 @@ We would like you to enhance the existing project and see you complete the follo
 We would like you to enhance the existing project and see you complete the following requirements:
 
 - `employee.json` has only `name`, and `id` elements. Please add `date of birth` and `address` elements to the `Employee` resource. Address will have `line1`, `line2`, `city`, `state`, `country` and `zip_code` elements. `line2` is an optional element.
-    - `{
+    - {
 	  "first_name": "Amit",
 	  "last_name": "Mohapatra",
 	  "date_of_birth": "10/2/1990",
@@ -48,18 +48,18 @@ We would like you to enhance the existing project and see you complete the follo
 	       "country": "India",
 	       "zip_code": "560035"
 	       }
-      }`
+      }
 
 }
 - Add one more operation in `EmployeeResource` to create an employee. `EmployeeResource` will have two operations, one to create, and another to retrieve the employee resource.
-    - `Done`
+    - Done
 - Implement create and retrieve operations in `EmployeeResourceImpl.java`.
-	- `Done`
+	- Done
 - Resource created using create endpoint should be retrieved using retrieve/get endpoint.
     - create endpoint
 	  - `http://localhost:8080/v1/bfs/employee`
 	  - `method : POST`
-	  - `body : {
+	  - body : {
 	          "first_name": "Amit",
 	          "last_name": "Mohapatra",
 	          "date_of_birth": "10/2/1990",
@@ -70,16 +70,16 @@ We would like you to enhance the existing project and see you complete the follo
 	                "country": "India",
 	                "zip_code": "560035"
 	                 }
-	          }`
+	          }
 	- get endpoint
 	  - `http://localhost:8080/v1/bfs/employee/1`
 	  - `method : GET`
 - Please add the unit tests to validate your implementation.
-      - `added in employeeservFunctionalTests`
+    - added in employeeservFunctionalTests
 - Please use h2 in-memory database or any other in-memory database to persist the `Employee` resource. Dependency for h2 in-memory database is already added to the parent pom.
-      - `h2 configured`
+    - h2 configured
 - Please make sure the validations are done for the requests.
-      - `Input request validations are done in employeeservFunctionalTests resource package (EmployeeResourceCreate400Test)`
+    - Input request validations are done in employeeservFunctionalTests resource package (EmployeeResourceCreate400Test)
 - Response codes are as per rest guidelines.
     - create endpoint
 	  - `201(created)`
@@ -91,9 +91,9 @@ We would like you to enhance the existing project and see you complete the follo
 	  - `404(not found)`
 	  - `500(internal server eroor)`
 - Error handling in case of failures.
-    - `Done`
+	- Done
 - Idempotency logic is implemented to avoid duplicate resource creation.
-    - `DB unique constraint added in Entity`
+    - DB unique constraint added in Entity
 
 ## Assignment submission
 Thank you very much for your time to take this test. Please upload this complete solution in Github and send us the link to `bfs-sor-interview@paypal.com`.
