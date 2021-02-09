@@ -49,8 +49,7 @@ We would like you to enhance the existing project and see you complete the follo
 	       "zip_code": "560035"
 	       }
       }
-
-}
+	  
 - Add one more operation in `EmployeeResource` to create an employee. `EmployeeResource` will have two operations, one to create, and another to retrieve the employee resource.
     - Done
 - Implement create and retrieve operations in `EmployeeResourceImpl.java`.
